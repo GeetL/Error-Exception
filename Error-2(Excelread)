@@ -1,3 +1,5 @@
+Problem1
+=====================================================================
 try {
 			book=WorkbookFactory.create(file);}//1
 		
@@ -7,8 +9,32 @@ try {
 		catch (IOException e) {//3
             e.printStackTrace();
         }
-        
+   
+   
+   Error
  1 - The type org.apache.poi.poifs.filesystem.NPOIFSFileSystem cannot be resolved. It is indirectly referenced from required .class files
  2 - InvalidFormatException cannot be resolved to a type
  3 - IOException cannot be resolved to a type
+ 
+ Solution - Change dependencies in poi.xml
+ 
+ 
+ Problem2
+ ==================================================================
+ 
+		for(int i=0; i< sheet.getLastRowNum();i++)
+		{
+			for(int k=0;k<sheet.getRow(0).getLastCellNum();k++)
+			{
+				data[i][k]=sheet.getRow(i+1).getCell(k).tostring();//1
+			}
+		}
+Error 
+1- The method tostring() is undefined for the type Cell
+
+Solution- Silly mistake, S should be in upper case letter which is a class
+ 
+ 
+ 
+ 
  
