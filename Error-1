@@ -1,0 +1,5 @@
+While writing code for Analyzer to execute failed test cases repeatedly to get accurate result with the help of IRetryAnalyzer interface provided by TestNG Listner
+
+
+Error in code ---> Analyzer cannot be resolved a type 
+Solution -------->At test level Package name given in the location was incorrect
