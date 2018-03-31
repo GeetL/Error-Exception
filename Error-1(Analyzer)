@@ -1,4 +1,4 @@
-While writing code for Analyzer to execute failed test cases repeatedly to get accurate result with the help of IRetryAnalyzer interface provided by TestNG Listner
+While writing code for Analyzer to execute failed test cases repeatedly for accurate result with the help of IRetryAnalyzer interface provided by TestNG Listner
 
 
 Error in code ---> Analyzer cannot be resolved a type 
