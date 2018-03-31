@@ -1,0 +1,14 @@
+try {
+			book=WorkbookFactory.create(file);}//1
+		
+		catch(InvalidFormatException e)//2
+		   { e.printStackTrace();}
+		
+		catch (IOException e) {//3
+            e.printStackTrace();
+        }
+        
+ 1 - The type org.apache.poi.poifs.filesystem.NPOIFSFileSystem cannot be resolved. It is indirectly referenced from required .class files
+ 2 - InvalidFormatException cannot be resolved to a type
+ 3 - IOException cannot be resolved to a type
+ 
