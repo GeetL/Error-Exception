@@ -1,5 +1,29 @@
 While writing code for Analyzer to execute failed test cases repeatedly for accurate result with the help of IRetryAnalyzer interface provided by TestNG Listner
+Code - 1
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
 
+public class RetryAnalyzer  implements IRetryAnalyzer{
+	int count=0;
+	int retryLinit=3;
+	
+	
+	public boolean retry(ITestResult result)
+	{
+		if(count<retryLinit )
+		{
+			count++;
+			return true;
+			}
+		return false;
+		
+	}
+	}
+  
+code -2
+Test(@ Pass above class name path)//Error
+{
+}
 
 Error in code ---> Analyzer cannot be resolved a type 
 Solution -------->At test level Package name given in the location was incorrect
